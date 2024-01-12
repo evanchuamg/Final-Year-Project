@@ -1,0 +1,49 @@
+img{
+    height: 100px;
+    width: 300px;
+    margin-left: 350px;
+}
+
+button{
+    height:auto;
+    width: 100;
+    margin-left: 450px;
+    font-size: large;
+}
+
+body{
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://img.freepik.com/premium-vector/cute-hand-drawn-seamless-pattern-with-colorful-polka-dots-abstract-multicolored-doodle-shapes_107335-776.jpg');
+    background-size: cover;
+}
+
+div {
+    position: absolute;
+    width : 90px;
+    height : 90px;
+    border-radius: 50%;
+    outline: 10px solid blue;
+}
+
+#variables{
+    margin-left: 300px;
+    font-family: 'Open Sans';
+}
+
+#variables label[for="x_input"]{
+    color: red
+}
+#variables label[for="y_input"]{
+    color: blue
+}
+#variables label[for="connect"]{
+    color: darkgreen
+}
+
+#instruction{
+    position: absolute;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    font-family: "open-sans";
+    margin-left: 850px;
+}
