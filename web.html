@@ -1,31 +1,31 @@
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Data Structures</title>
-    <link rel="stylesheet" href="style.css"> 
-  </head>
   <body>
-    <section id="Topic">
-        <h1>Select a topic for simulation</h1>
-        <p></p>
-        <select name="Topic" id="topic" required>
-            <option value ="Array">Array</option>
-            <option value ="Linked List">Linked List</option>
-            <option value ="Dynamic Array">Dynamic Array</option>
-        </select>
+    <section id="instruction">
+      <h1>OBJECTIVE:</h1>
+      <p>To be the first player to connect 4 of the same colored discs in a row (either vertically, horizontally, or diagonally)</p>
+      <h1>HOW TO PLAY:</h1>
+      <ul>
+        <li>First, decide who goes first and what color each player will have. </li>
+        <li>Players must alternate turns, and only one disc can be dropped in each turn.</li>
+        <li>On your turn, drop one of your colored discs from the top into any of the seven slots.</li>
+        <li>The game ends when there is a number selected-in-a-row or a stalemate.</li>
+        <li>The starter of the previous game goes second on the next game.</li>
+      </ul>
     </section>
-    
-    <section id="code">
-        <h2>Code used in simulation</h2>
-        <div id ="code"></div>
-        <h2>Explanation of code</h2>
-        <div id ="explain"></div>
+    <header>
+      <img src="https://shuffle.cards/assets/images/licenses/connect4/header_logo.png">
+      <p></p>
+      <button id="start">Start Game</button>
+      <p></p>
+    </header>
+    <section id="variables">
+      <label for="x_input">Rows: </label>
+      <input type="number" id="x_input" name="x_input" min="3" value="5">
+      
+      <label for="y_input">Columns: </label>
+      <input type="number" id="y_input" name="y_input" min="3" value="5">
+      <p></p>
+      <label for="connect">How many disc to connect: </label>
+      <input type="number" id="connect" name="connect" min="2" max="9" value="4">
+      <p></p>
+      <h4>Next Player <span id="player_turn"></h4>
     </section>
-
-
-    <script src="Main.js"> <!-- change file name here --> 
-    </script>
-  </body>
-</html>
