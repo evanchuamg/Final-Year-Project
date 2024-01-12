@@ -1,10 +1,4 @@
-# Final-Year-Project
+# Final-Year-Project, game of Connect4 
 AY2023/24 FYP
 
-This github consist of the coding project for Connect4 and the pedagogical simulation of basic data structures. 
-
-
-Topics covered for simulation of Data structure
-- array
-- linked list
-- hash tables
+This Git repository hosts the Connect4 game.
