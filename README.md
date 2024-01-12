@@ -2,13 +2,9 @@
 AY2023/24 FYP
 
 Topics to cover 
-- Data structure
+Data structure
 - array
-- direct access array
+- linked list
 - hash tables
 
-- Operations
-- sorting
-- exponential sort
-- split sort
   
