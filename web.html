@@ -3,44 +3,47 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Connect4</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <title>Data Structures</title>
+    <link rel="stylesheet" href="style.css"> 
   </head>
   <body>
-    <section id="instruction">
-      <h1>OBJECTIVE:</h1>
-      <p>To be the first player to connect 4 of the same colored discs in a row (either vertically, horizontally, or diagonally)</p>
-      <h1>HOW TO PLAY:</h1>
-      <ul>
-        <li>First, decide who goes first and what color each player will have. </li>
-        <li>Players must alternate turns, and only one disc can be dropped in each turn.</li>
-        <li>On your turn, drop one of your colored discs from the top into any of the seven slots.</li>
-        <li>The game ends when there is a number selected-in-a-row or a stalemate.</li>
-        <li>The starter of the previous game goes second on the next game.</li>
-      </ul>
-    </section>
-    <header>
-      <img src="https://shuffle.cards/assets/images/licenses/connect4/header_logo.png">
+  <div class="operation">
+    <h1>Welcome to Simulation for Data Structures</h1>
+    <div class="data_div">
+      <h2>Select a Data Structure</h2>
       <p></p>
-      <button id="start">Start Game</button>
+      <select name="Data" id="data" required>
+        <option value ="sorted_array">Sorted Array</option>
+      </select>
+      <input name="input_list" id="input_list" required placeholder="input numbers seprate with commas">
+    <h2>Select an operation</h2>
       <p></p>
-    </header>
-    <section id="variables">
-      <label for="x_input">Rows: </label>
-      <input type="number" id="x_input" name="x_input" min="3" value="5">
-      
-      <label for="y_input">Columns: </label>
-      <input type="number" id="y_input" name="y_input" min="3" value="5">
+    <select name="ops" id="ops" required>
+      <option value ="build"></option>
+      <option value ="find">find</option>
+      <option value ="insert">insert</option>
+      <option value ="delete">delete</option>
+      <option value ="find_min">find min</option>
+      <option value ="find_max">find max</option>
+      </select>
+      <input type="number" id = "ops_input" required placeholder="target number">
+      <input type="number" id = "ops_input2" required placeholder="index (for insert)">
       <p></p>
-      <label for="connect">How many disc to connect: </label>
-      <input type="number" id="connect" name="connect" min="2" max="9" value="4">
-      <p></p>
-      <h4>Next Player <span id="player_turn"></h4>
-    </section>
-    
+      <button onclick=start_data()>Simulate data structure</button>
+      <button onclick=restart_board();remove_input()>restart board</button>   
+      <button onclick=ds.next_step()>next step</button>
+      <button onclick=ds.previous_step()>previous step</button>
+    </div>
+
+    <div class="code_div">
+        <div id ="explain"></div>
+    </div>
 
 
-    <script src="Connect4.js">
-    </script>
+    <div id="target_explain"></div>
+    <div id="data_parent" class="parent-data-div"></div>
+    <h4>Target value: <div id="target_num"></h4>
+    <script src="Main_data.js"></script> <!-- change file name here -->
+
   </body>
 </html>
