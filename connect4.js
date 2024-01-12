@@ -6,7 +6,6 @@ let y_input_current = -1;
 let connect = -1;
 let board = {};
 
-
 const make_div = (x,y) => {
     const div = document.createElement("div");
     document.body.appendChild(div);
@@ -28,9 +27,7 @@ const update_board = (x) => { // check for winning condition
             answer = window.confirm("No one wins! \n\nRestart Board?")
             if (answer) {restart_board()}
             else {win = true};
-        }, 100)
-        
-        
+        }, 100)       
     }
     
     for (let yy=y_input_current-1; yy>-1; yy--){ // find the correct Y position
@@ -52,7 +49,6 @@ const update_board = (x) => { // check for winning condition
                 }, 100);
                 break;
             }
-
             turn++;
             break; // exit loop
         }
@@ -71,7 +67,6 @@ const win_line = (x,y) => {
             div = document.getElementById(elem);
             div.style.outline = "10px solid gold";
         }
-
     return true 
     }
 }
@@ -96,8 +91,6 @@ const vertical = (x,y) => {
         }
     }
     if (win_list.length > connect-1){return win_list;} 
-    
-    
 }
 
 const horizontal = (x,y) => {
